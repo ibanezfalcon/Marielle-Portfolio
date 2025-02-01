@@ -455,7 +455,20 @@ footer span {
   border: 2px solid #99d6d5;
   border-radius: 10px;
   padding: 5px;
-  max-width: 40%; /* Ensures images scale responsively */
   height: auto;
-  object-fit: cover; /* Keeps aspect ratio without distortion */
+  object-fit: cover; 
+}
+
+/* Media query for larger screens */
+@media (min-width: 768px) {
+  #imageGallery img {
+    width: 30%; /* Set a fixed width for larger screens */
+  }
+}
+
+/* Media query for even larger screens like desktops or laptops */
+@media (min-width: 1024px) {
+  #imageGallery img {
+    width: 40%; /* Adjust width further for bigger screens */
+  }
 }
