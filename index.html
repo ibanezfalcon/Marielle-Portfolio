@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management Platform for remote teams">
+    <title>Name of company</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100 py-5 line-bg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span class="highlighted">Ma</span>rielle <span class="highlighted">Go</span>zo <span
+                    class="highlighted">/</span> BIM Coordinator | BIM Modeler
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-item nav-link active px-4" href="#home">Home</a>
+                    <a class="nav-item nav-link px-4" href="#portfolio">Portfolio</a>
+                    <a class="nav-item nav-link px-4" href="#expertize">Work</a>
+                    <a class="nav-item nav-link px-4" href="#about">About</a>
+                    <a class="nav-item nav-link px-4" href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="hero-img">
+            <div class="hero-shadow"></div>
+            <div class="hero-text">
+                <h1>
+                    <span class="highlighted">De</span>signs <br>
+                    Innovatively
+                </h1>
+                <a href="#portfolio"> <i class="bi bi-arrow-down"></i> </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="portfolio">
+            <div class="portfolio bg-white py-5">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center menu">
+                        <div class="col-4">
+                            <h1><span class="highlighted">My</span> portfolio</h1>
+                        </div>
+                        <div class="col-lg-6 text-center">
+                            <div id="filters" class="row">
+                                <div class="col">
+                                    <button class="btn-portfolio active" data-filter="*">All</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-portfolio" data-filter=".c1">Web design</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-portfolio" data-filter=".c2">Brand</button>
+                                </div>
+                                <div class="col">
+                                    <button class="btn-portfolio" data-filter=".c3">Social</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="underline-dark"></div>
+                    <div class="row grid gallery">
+                        <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio" onclick="openProject(event, 'Amaia Steps The Junction Place Ezperanza', 'Associated with Makati Development Corporation<br>Skills: Architectural Design · AutoCAD · Autodesk BIM 360 · BIM Coordination · BIM Modelling · BIM Software · Building Information Modeling (BIM) · Microsoft Office · Revit', ['img/portfolio/tjpesperanza.jpg'])">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/tjpesperanza.jpg" alt="Gallery image 1" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Amaia Steps The Junction Place Ezperanza</h3>
+                                                    <!-- <p>Associated with Makati Development Corporation</p> -->
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 all c1">
+                            <a href="./portfolio.html#portfolio" onclick="openProject(event, 'Alveo Sentrove Podium & Tower 1', 'Associated with Makati Development Corporation<br> Skills: Revit · AutoCAD · Autodesk BIM 360 · BIM Coordination · BIM Modelling · BIM Software · Microsoft Office · Architectural Design', ['img/portfolio/img1.jpg', 'img/portfolio/img2.jpg', 'img/portfolio/img3.jpg','img/portfolio/img5.jpg','img/portfolio/yellpicwithothers.jpg'])">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/AlveoSentrove.jpg" alt="Gallery image 2" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Alveo Sentrove Podium & Tower 1</h3>
+                                                    <!-- <p>Associated with MDC
+                                                    </p> -->
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                        <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio" onclick="openProject(event, 'Sentrove Sales Pavilion', 'Associated with Makati Development Corporation<br>Skills: AutoCAD · BIM Modelling · BIM Software · Revit', ['img/portfolio/SentrolveSalesPav.jpg'])">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/SentrolveSalesPav.jpg" alt="Gallery image 3" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Sentrove Sales Pavilion</h3>
+                                                    <!-- <p>Category</p> -->
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- <div class="col-sm-3 all c3">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-4.jpg" alt="Gallery image 4" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-5.jpg" alt="Gallery image 5" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-6.jpg" alt="Gallery image 6" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-7.jpg" alt="Gallery image 7" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c3">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-8.jpg" alt="Gallery image 8" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-9.jpg" alt="Gallery image 9" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c3">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-10.jpg" alt="Gallery image 10" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-11.jpg" alt="Gallery image 11" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c3">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-12.jpg" alt="Gallery image 12" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-13.jpg" alt="Gallery image 13" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                        <!-- <div class="col-sm-3 all c2">
+                            <a href="./portfolio.html#portfolio">
+                                <figure class="gallery__item">
+                                    <img src="img/portfolio/img-14.jpg" alt="Gallery image 14" class="gallery__img">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <div class="row">
+                                                <div class="col-7 offset-1">
+                                                    <h3>Project name</h3>
+                                                    <p>Category</p>
+                                                </div>
+                                                <div class="col-3"><i class="bi bi-arrow-up"></i></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </a>
+                        </div> -->
+                    </div>
+                </div>
+                </figure>
+                </a>
+            </div>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-3 text-center">
+                    <button id="load-more"><i class="bi bi-arrow-down display-4"></i>
+                        <p>Show more</p>
+                    </button>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="expertize">
+            <div class="expertize">
+                <div class="container">
+                    <div class="row item wed-design" data-text="web-design">
+                        <div class="container d-flex justify-content-center align-items-center text-center">
+                            <h1><span class="highlighted">Experience</span></h1>
+                        </div>
+                        <div class="col-12 col-sm-4 mt-5">
+                            <h2><span class="highlighted">Makati </span>Development Corporation</h2>
+                        </div>
+                        <div class="col-8 col-sm-6 mt-5">
+                            <p>
+                                I specialize in coordinating BIM workflows, managing architectural and structural models, and ensuring seamless collaboration among project teams.
+                                <span class="dots">...</span>
+                                <span class="more" style="display: none;">
+                                    I work extensively with Revit, AutoCAD, and Autodesk BIM 360 to streamline project execution and optimize design processes. My role involves clash detection, 3D modeling, and ensuring project standards are met.
+                                    <br><br>
+                                    <strong>BIM Coordinator</strong> <br>
+                                    <em>Full-time</em> <br>
+                                    <em>Sep 2023 - Present · 1 yr 6 mos</em> <br>
+                                    <strong>Skills:</strong> AutoCAD · Autodesk BIM 360 · Building Information Modeling (BIM) · BIM Modelling · BIM Software · BIM Coordination · SketchUp · Revit · Architectural Design
+                                    <br>
+                                    <strong>Sr. BIM Specialist </strong> <br>
+                                    <em>Jan 2022 - Sep 2023 · 1 yr 9 mosJan 2022 to Sep 2023 · 1 yr 9 mos</em> <br>
+                                    <br>
+                                    <strong>Jr. BIM Specialist </strong> <br>
+                                    <em>Jan 2020 - Jan 2022 · 2 yrs 1 moJan 2020 to Jan 2022 · 2 yrs 1 mo</em> <br>
+                                    <br>
+                                    <strong>BIM Specialist </strong> <br>
+                                    <em>Jun 2019 - Jan 2020 · 8 mos</em> <br>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-3 col-sm-2 text-center">
+                            <button class="plus" onclick="readMore('web-design')"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+                    <div class="container">
+                    <div class="underline-light"></div>
+                    <div class="row item" data-text="brand">
+                        <div class="col-12 col-sm-4">
+                            <h2><span class="highlighted">Iconstruct builders</span> and development corporation</h2>
+                        </div>
+                        <div class="col-8 col-sm-6">
+                            <p>
+                                As a Project In Charge, I managed construction projects, ensuring quality, budget, and timelines were met efficiently.
+                                <span class="dots">...</span>
+                                <span class="more" style="display: none;">
+                                    I supervised site operations, coordinated with contractors, and implemented project plans to ensure smooth execution. My responsibilities included overseeing safety compliance, material procurement, and team leadership to deliver high-quality results.
+                                    <br><br>
+                                    <strong>Project In Charge</strong> <br>
+                                    <em>Full-time</em> <br>
+                                    <em>May 2018 - Jun 2019 · 1 yr 2 mos</em> <br>
+                                    <strong>Location:</strong> Marikina, National Capital Region, Philippines
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-3 col-sm-2 text-center">
+                            <button class="plus" onclick="readMore('brand')"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-8">
+                            <h1>
+                                <span class="highlighted">Hi,</span> I'm <br> Marielle
+                            </h1>
+                            <p>I am an architectural graduate with a strong passion for design, technology, and innovation. My expertise in Building Information Modeling (BIM) allows me to create efficient, sustainable, and highly coordinated architectural solutions. With a keen eye for aesthetics and technical precision, I aim to bridge the gap between creativity and functionality in the built environ
+                                ment.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <img class="img-fluid custom-border" src="img/yelle pic.png" alt="Team Work">
+                        </div>
+                        <div class="underline-dark"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h1>Contact</h1>
+                        </div>
+                        <div class="col">
+                            <p>
+                                Contact me via mail<br>
+                                <a href="mailto:example@example.com">gozomarielle@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="col">
+                            <p>
+                                My phone <br>
+                                <a href="tel:+32-504-444-123">09923003440</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-form col-12">
+                        <form action="mailto:example@example.com" method="post" class="needs-validation" novalidate>
+                            <div class="form-group mt-5">
+                                <label class="col-12">Full name</label>
+                                <input class="col-12" type="text" id="fname" placeholder="Full name" name="fname"
+                                    required XXXautofocusXXX>
+                                <div class="invalid-feedback">Please write a full name.</div>
+                            </div>
+                            <div class="form-group mt-5">
+                                <label class="col-12">E-mail</label>
+                                <input class="col-12" type="email" id="email" placeholder="E-mail" name="email" required
+                                    XXXautofocusXXX>
+                                <div class="invalid-feedback">Please write a correct e-mail.</div>
+                            </div>
+                            <div class="form-group mt-5">
+                                <label class="col-12">Message</label>
+                                <input class="col-12" type="text" id="message" placeholder="Message" name="message"
+                                    required XXXautofocusXXX>
+                                <div class="invalid-feedback">Please write a message.</div>
+                            </div>
+                            <div class="row justify-content-end">
+                                <div class="col-12 col-lg-3 mb-5 text-end">
+                                    <button type="submit" name="submit" class="main-button">Send message
+                                        <img src="img/icons/arrow-right.svg" alt="arrow-right"
+                                            style="width: 40px; margin-left: 12px;">
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Isotope gallery -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS codes -->
+    <script src="js/scroll.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/snippets.js"></script>
+
+    <!--
+    This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+    You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    -->
+</body>
+
+</html>
+
+<script>
+    function openProject(event, projectName, description, images) {
+    event.preventDefault(); // Prevent default link action
+
+    // Save project data to localStorage
+    localStorage.setItem("projectName", projectName);
+    localStorage.setItem("projectDescription", description);
+    localStorage.setItem("projectImages", JSON.stringify(images));
+
+    // Redirect to portfolio page
+    window.location.href = "portfolio.html";
+}
+
+</script>
